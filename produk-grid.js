@@ -15,7 +15,7 @@ fetch(feedUrl)
       const img = imgMatch ? imgMatch[1] : "https://via.placeholder.com/300x300?text=No+Image";
 
       const waText = encodeURIComponent(`Halo, saya ingin beli produk: ${title} \n${link}`);
-      const waLink = `https://wa.me/6281234567890?text=${waText}`; // Ganti nomor WA
+      const waLink = `https://wa.me/${window.NOMOR_WA_TOKO}?text=${waText}`;
 
       const item = `
         <div class="product-item">
